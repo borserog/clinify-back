@@ -62,9 +62,11 @@ public class ExamsApiController {
             newExam.patient = patient;
         } catch (Exception ex) {
             System.out.println(ex);
-        }       
+        }   
+        
+        System.out.println(newExam);
  
-        return examRepository.save(exam);
+        return examRepository.save(newExam);
     }
     
 }
