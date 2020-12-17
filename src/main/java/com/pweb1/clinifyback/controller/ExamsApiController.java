@@ -29,9 +29,6 @@ public class ExamsApiController {
     @Autowired
     private ExamRepository examRepository;
 
-    @Autowired
-    private PatientRepository patientRepository;
-
     @GetMapping("")
     public List<Exam> getAllPatients() {
         return examRepository.findAll();
